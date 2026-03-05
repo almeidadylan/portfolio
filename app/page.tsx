@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import { useState } from 'react';
-import Header from "./components/header.tsx"
+import Header from "./components/header.tsx";
+import Icon from "./components/icon.tsx";
+import linkdin from "../public/social-media-icons/linkdin-icon.svg";
 
 export default function Home() {
 
@@ -11,6 +13,7 @@ export default function Home() {
   return (
     <section className="flex-col"> 
       <Header />
+      <Icon icon={linkdin}/>
 
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <div>
